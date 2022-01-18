@@ -22,10 +22,9 @@ const n2=2;
 console.log(n2);
 const n3=3;
 console.log(n3);
-console.log('');
 
 //2. Sukurti 3 kintamuosius su teksto tipo reikšmėmis. Po kiekvieno jų inicijavimo, išvesti į console
-console.log('Task 1.2 Sukurti 3 kintamuosius su teksto tipo reikšmėmis. Po kiekvieno jų inicijavimo, išvesti į console\n');
+console.log('\nTask 1.2 Sukurti 3 kintamuosius su teksto tipo reikšmėmis. Po kiekvieno jų inicijavimo, išvesti į console\n');
 
 const text1='word1';
 console.log(text1);
@@ -33,10 +32,9 @@ const text2='word2';
 console.log(text2);
 const text3='word3';
 console.log(text3);
-console.log('');
 
 //3. Sukurti 3 sąrašo tipo kintamuosius su penkiomis skaičių tipo reikšmėmis. Po kiekvieno jų inicijavimo, išvesti į console
-console.log('Task 1.3 Sukurti 3 sąrašo tipo kintamuosius su penkiomis skaičių tipo reikšmėmis. Po kiekvieno jų inicijavimo, išvesti į console\n');
+console.log('\nTask 1.3 Sukurti 3 sąrašo tipo kintamuosius su penkiomis skaičių tipo reikšmėmis. Po kiekvieno jų inicijavimo, išvesti į console\n');
 
 const numberList1=[1,2,3,4,5];
 console.log(numberList1);
@@ -62,10 +60,9 @@ for (let i=11;i<16;i++){
     numberList3_1.push(i);
 }
 console.log(numberList3_1);
-console.log('');
 
 //Sukurti 3 sąrašo tipo kintamuosius su penkiomis teksto tipo reikšmėmis. Po kiekvieno jų inicijavimo, išvesti į console
-console.log('Task 1.4 Sukurti 3 sąrašo tipo kintamuosius su penkiomis teksto tipo reikšmėmis. Po kiekvieno jų inicijavimo, išvesti į console\n')
+console.log('\nTask 1.4 Sukurti 3 sąrašo tipo kintamuosius su penkiomis teksto tipo reikšmėmis. Po kiekvieno jų inicijavimo, išvesti į console\n')
 
 const textList1=['one','two','three','four','five'];
 console.log(textList1);
@@ -73,7 +70,6 @@ const textList2=['six','seven','eight','nine','ten'];
 console.log(textList2);
 const textList3=['eleven','twelve','thirteen','fourteen','fifteen'];
 console.log(textList3);
-console.log('');
 
 /*
 Task 2 Veiksmai su kintamaisiais
@@ -88,7 +84,7 @@ Task 2 Veiksmai su kintamaisiais
 4. Sujungti sąrašų vertes, kurių tipas yra tekstai, nuo sąrašo galo iki pradžios taip, jog tarp jų būtų kablelis ir tarpas
 */
 
-console.log('Task 2 Veiksmai su kintamaisiais');
+console.log('\nTask 2 Veiksmai su kintamaisiais');
 console.log('----------------------------------------\n');
 
 //1. Susumuoti visus skaičiaus tipo kintamuosius. Rezultatą išvesti į console
