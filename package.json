@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "nodemon ./index.js",
     "task1":"nodemon ./js/homework_1.js",
+    "karolina":"nodemon ./js/karolina.js",
+    "nora":"nodemon ./js/nora.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

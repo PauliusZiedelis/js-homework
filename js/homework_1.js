@@ -96,17 +96,15 @@ console.log('Task 2.1 Susumuoti visus skaičiaus tipo kintamuosius. Rezultatą i
 
 let sum=n1+n2+n3;
 console.log(sum);
-console.log('');
 
 //2. Sujungti visus teksto tipo kintamuosius taip, jog tarp jų būtų sudarytas tarpas. Rezultatą išvesti į console
-console.log('Task 2.2 Sujungti visus teksto tipo kintamuosius taip, jog tarp jų būtų sudarytas tarpas. Rezultatą išvesti į console\n');
+console.log('\nTask 2.2 Sujungti visus teksto tipo kintamuosius taip, jog tarp jų būtų sudarytas tarpas. Rezultatą išvesti į console\n');
 
 const sentence=`${text1} ${text2} ${text3}`;
 console.log(sentence);
-console.log('');
 
 //3. Apskaičiuoti vertę iš sąrašų kurių verčių tipas yra skaičiai, pagal pateiktą logiką 1-2+3-4+5
-console.log('Task 2.3 Apskaičiuoti vertę iš sąrašų kurių verčių tipas yra skaičiai, pagal pateiktą logiką 1-2+3-4+5\n');
+console.log('\nTask 2.3 Apskaičiuoti vertę iš sąrašų kurių verčių tipas yra skaičiai, pagal pateiktą logiką 1-2+3-4+5\n');
 
 const sumList1=numberList1[0]-numberList1[1]+numberList1[2]-numberList1[3]+numberList1[4];
 const sumList2=numberList2[0]-numberList2[1]+numberList2[2]-numberList2[3]+numberList2[4];
@@ -119,20 +117,30 @@ console.log('\ndifferent solution\n');
 
 const sumList_2=numberList1[0]-numberList1[1]+numberList1[2]-numberList1[3]+numberList1[4]+numberList2[0]-numberList2[1]+numberList2[2]-numberList2[3]+numberList2[4]+numberList3[0]-numberList3[1]+numberList3[2]-numberList3[3]+numberList3[4];
 console.log(sumList_2);
-console.log('');
 
 //4. Sujungti sąrašų vertes, kurių tipas yra tekstai, nuo sąrašo galo iki pradžios taip, jog tarp jų būtų kablelis ir tarpas
-console.log('Task 2.4 Sujungti sąrašų vertes, kurių tipas yra tekstai, nuo sąrašo galo iki pradžios taip, jog tarp jų būtų kablelis ir tarpas\n');
+console.log('\nTask 2.4 Sujungti sąrašų vertes, kurių tipas yra tekstai, nuo sąrašo galo iki pradžios taip, jog tarp jų būtų kablelis ir tarpas\n');
 
 const sentenceOfList1=`${textList1[4]}, ${textList1[3]},  ${textList1[2]},  ${textList1[1]},  ${textList1[0]}`;
 const sentenceOfList2=`${textList2[4]}, ${textList2[3]},  ${textList2[2]},  ${textList2[1]},  ${textList2[0]}`;
 const sentenceOfList3=`${textList3[4]}, ${textList3[3]},  ${textList3[2]},  ${textList3[1]},  ${textList3[0]}`;
-const sentenceOfList=`${sentenceOfList1}, ${sentenceOfList2}, ${sentenceOfList3}`;
-console.log(sentenceOfList);
-console.log('');
+console.log(sentenceOfList1);
+console.log(sentenceOfList2);
+console.log(sentenceOfList3);
+
+//different solution
+console.log('\ndifferent solution\n');
+
+function fromBack(someList=[],){
+    let sentenceOfSomeList=`${someList[4]}, ${someList[3]},  ${someList[2]},  ${someList[1]},  ${someList[0]}`;
+    console.log(sentenceOfSomeList);
+}
+fromBack(textList1);
+fromBack(textList2);
+fromBack(textList3);
 
 //Extra tasks for homework from lecture
-console.log('*** Extra tasks ***\n');
+console.log('\n*** Extra tasks ***\n');
 console.log('Extra task 1 į console išvesti kiek mokinių mokosi klasėje ir mokinių vardus\n');
 // Klaseje mokosi 4 asmenys.
 // Mokinių vardai yra Petras, Ona, Jonas, Maryte.
@@ -142,7 +150,7 @@ const asmuo3 = 'Jonas';
 const asmuo4 = 'Maryte';
 const asmenys = [asmuo1, asmuo2, asmuo3, asmuo4];
 // į console išvesti kiek mokinių mokosi klasėje ir mokinių vardus
-console.log (`Klasje mokosi ${asmenys.length} mokiniai.\nMokinių vardai yra:\n* ${asmenys[0]}\n* ${asmenys[1]}\n* ${asmenys[2]}\n* ${asmenys[3]}`);
+console.log (`Klasje mokosi ${asmenys.length} mokiniai.\nMokinių vardai yra:\n* ${asmenys[0]}\n* ${asmenys[1]}\n* ${asmenys[2]}\n* ${asmenys[3]}\n`);
 const pazymiai=[10,2,8,6,4]
 console.log('Extra task 2 į console išvesti pažymius, pažimių sumą, pažimių kiekį ir pažimių vidurkį\n');
 let suma=0;
@@ -150,4 +158,4 @@ for(let i=0;i<pazymiai.length;i++){
     suma=suma+pazymiai[i];
 };
 let avg = (suma/pazymiai.length);
-console.log(`Pažymiai: ${pazymiai}\nPažimių suma:${suma}\nPažimių kiekis: ${pazymiai.length}\nPažimių vidurkis: ${avg}`);
+console.log(`Pažymiai: ${pazymiai}\nPažimių suma: ${suma}\nPažimių kiekis: ${pazymiai.length}\nPažimių vidurkis: ${avg}`);
