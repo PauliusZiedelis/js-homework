@@ -132,4 +132,22 @@ console.log(sentenceOfList);
 console.log('');
 
 //Extra tasks for homework from lecture
-console.log('Extra tasks 2.4 Sujungti sąrašų vertes, kurių tipas yra tekstai, nuo sąrašo galo iki pradžios taip, jog tarp jų būtų kablelis ir tarpas\n');
+console.log('*** Extra tasks ***\n');
+console.log('Extra task 1 į console išvesti kiek mokinių mokosi klasėje ir mokinių vardus\n');
+// Klaseje mokosi 4 asmenys.
+// Mokinių vardai yra Petras, Ona, Jonas, Maryte.
+const asmuo1 = 'Petras';
+const asmuo2 = 'Ona';
+const asmuo3 = 'Jonas';
+const asmuo4 = 'Maryte';
+const asmenys = [asmuo1, asmuo2, asmuo3, asmuo4];
+// į console išvesti kiek mokinių mokosi klasėje ir mokinių vardus
+console.log (`Klasje mokosi ${asmenys.length} mokiniai.\nMokinių vardai yra:\n* ${asmenys[0]}\n* ${asmenys[1]}\n* ${asmenys[2]}\n* ${asmenys[3]}`);
+const pazymiai=[10,2,8,6,4]
+console.log('Extra task 2 į console išvesti pažymius, pažimių sumą, pažimių kiekį ir pažimių vidurkį\n');
+let suma=0;
+for(let i=0;i<pazymiai.length;i++){
+    suma=suma+pazymiai[i];
+};
+let avg = (suma/pazymiai.length);
+console.log(`Pažymiai: ${pazymiai}\nPažimių suma:${suma}\nPažimių kiekis: ${pazymiai.length}\nPažimių vidurkis: ${avg}`);
