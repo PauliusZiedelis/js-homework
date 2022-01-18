@@ -132,4 +132,4 @@ console.log(sentenceOfList);
 console.log('');
 
 //Extra tasks for homework from lecture
-console.log('*** Extra tasks for homework from lecture *** \n');
+console.log('Extra tasks 2.4 Sujungti sąrašų vertes, kurių tipas yra tekstai, nuo sąrašo galo iki pradžios taip, jog tarp jų būtų kablelis ir tarpas\n');
