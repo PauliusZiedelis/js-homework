@@ -127,3 +127,41 @@ function lygineSuma(a,b){
 };
 
 lygineSuma(1,2);
+lygineSuma("a",2);
+lygineSuma([1,1,1,1],[2]);
+
+//9. Parašyti funkciją pirminisSkaicius. Funkcija turi vieną kintamąjį. Turi būti patikrinimas, kad kintamasis yra skaičius. 
+//Funkcija turi grąžinti ar pateiktas skaičius yra pirminis( pirminisskaičius yra tas, kuris dalinasi tik iš savęs ir tik iš vieneto be liekanos.) (10 taškų)
+console.log(`\n 9. Parašyti funkciją pirminisSkaicius. Funkcija turi vieną kintamąjį. Turi būti patikrinimas, kad kintamasis yra skaičius. \nFunkcija turi grąžinti ar pateiktas skaičius yra pirminis( pirminisskaičius yra tas, kuris dalinasi tik iš savęs ir tik iš vieneto be liekanos.) (10 taškų)\n`);
+
+function pirminisSkaicius(a){
+    if(Number.isFinite(a)){
+        if(a%1===0){
+            console.log("sakicius priminis");
+        }
+     }
+     else{
+        console.log(`Error: kintamasis '${a}' nėra skaičiaus tipo`);
+     }
+}
+
+pirminisSkaicius(1);
+pirminisSkaicius(3);
+pirminisSkaicius('a');
+
+//10. Parašyti funkciją telefonoNumeris. Funkcija turi priimti vieną kintamąjį - masyvą. Masyvo elementai - skaičiai, ilgis - 10. Funkcija turi grąžinti telefono numerį tokiu formatu - "(XXX) XXX-XXXX". (10 taškų)*/
+console.log(`\n 10. Parašyti funkciją telefonoNumeris. Funkcija turi priimti vieną kintamąjį - masyvą. Masyvo elementai - skaičiai, ilgis - 10. Funkcija turi grąžinti telefono numerį tokiu formatu - "(XXX) XXX-XXXX".\n`);
+
+
+//(XXX) XXX-XXXX
+function telefonoNumeris(n){
+    if(Array.isArray(n) && n.length===10){
+        //(XXX) XXX-XXXX
+    console.log(`(${n[0]}${n[1]}${n[2]}) ${n[3]}${n[4]}${n[5]}-${n[6]}${n[7]}${n[8]}${n[9]}`);
+    }
+    else{
+        console.log('error bad iput')
+    }
+}
+
+telefonoNumeris([0,1,2,3,4,5,6,7,8,9]);
