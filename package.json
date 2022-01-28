@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "testas": "nodemon ./js/testas.js",
+    "cw": "nodemon ./js/codewars.js",
     "dev": "nodemon ./index.js",
     "task1":"nodemon ./js/homework_1.js",
+    "task2":"nodemon ./js/homework_2.js",
     "karolina":"nodemon ./js/karolina.js",
     "nora":"nodemon ./js/nora.js",
     "test": "echo \"Error: no test specified\" && exit 1"
